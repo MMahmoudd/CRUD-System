@@ -1,0 +1,359 @@
+body {
+    font-family: "Tajawal", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F0F3F4;
+  }
+  * {
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea,
+p {
+    font-family: "Tajawal", sans-serif;
+}
+/* Start Pages  */
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.list-page{
+  width: 80%;
+}
+/* Start Components  */
+/* Start Home Page Component  */
+.homePage-component{
+    position: relative;
+}
+.homePage-component .background,
+.login-component .background{
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
+.homePage-component .background img,
+.login-component .background img{
+    width: 100%;
+    height: 100vh;
+}
+.homePage-component .content,
+.login-component .card {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.homePage-component .content h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.homePage-component .content .btn {
+    background-color: #fff;
+    color: #551a8b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+.homePage-component .content .btn:hover{
+    background-color: #551a8b;
+    color: #fff;
+
+}
+
+/* Start list-component  */
+.list-component{
+    position: relative;
+    padding: 30px 0;
+}
+.list-component h2 {
+    margin-bottom: 20px;
+}
+.list-component table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+
+.list-component button.page-link {
+	display: inline-block;
+}
+ .list-component button.page-link {
+    font-size: 20px;
+    color: #29b3ed;
+    font-weight: 500;
+}
+.list-component .offset{
+  width: 500px !important;
+  margin: 20px auto;  
+}
+
+
+.list-component td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  transition: all .2s ease-in-out;
+}
+.list-component tr:hover td{
+    background-color: #6b3aa377 !important;
+}
+.list-component tr:nth-child(even) {
+  background-color: #6b3aa377;
+}
+.list-component .center{
+    text-align: center;
+}
+.list-component .image{
+    width: 70px;
+    border-radius: 50%;
+}
+.list-component .action{
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.list-component .action:focus{
+    outline: none;
+}
+.list-component .edit{
+    color: green;
+    transition: all .2s ease-in-out;
+}
+.list-component .edit:hover{
+    color: rgb(77, 168, 77);
+    background-color: rgb(216 229 216);
+}
+.list-component .delete{
+    color: red;
+    transition: all .2s ease-in-out;
+}
+.list-component .delete:hover{
+    color: rgb(233, 99, 99);
+    background-color: rgb(243 197 197);
+}
+.list-component .logout{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.list-component .logout:hover{
+    background-color: #6b3aa377;
+}
+.list-component .pagination span label {
+  color: black;
+  background-color: rgba(107,58,163,0.46667);
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.list-component .pagination span label.active {
+  background-color: rgb(145 111 186);
+  color: #fff;
+}
+
+.list-component .pagination span label:hover:not(.active){
+    background-color: rgb(145 111 186);
+    color: #fff;
+}
+
+.list-component .modal{
+    font-size: 15px;
+
+}
+.list-component .modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.list-component .modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.list-component .modal-container {
+  width: 300px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius:15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.list-component .modal-header {
+  margin-top: 0;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(233, 99, 99);
+  padding: 20px;
+  color: #fff;
+}
+
+.list-component .edit-header{
+    background-color: rgb(77, 168, 77) !important;
+}
+
+.list-component .modal-body {
+  margin: 20px 0;
+  padding: 0px 20px;
+}
+.list-component .modal-body .input-group{
+    margin-bottom: 10px;
+    padding: 10px 9px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #a8a8a8;
+}
+.list-component .modal-body .input-group:focus {
+    outline: none;
+}
+.list-component .modal-footer{
+    padding: 10px 20px;
+}
+.list-component .modal-enter {
+  opacity: 0;
+}
+
+.list-component .modal-leave-active {
+  opacity: 0;
+}
+
+.list-component .modal-enter .modal-container,
+.list-component .modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Start Login-Component  */
+
+.login-component{
+    position: relative;
+}
+.login-component .card {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px #eeeeee;
+    transition: all 0.5s ease;
+    top: 50% !important;
+}
+.login-component .card:hover{
+    box-shadow: 0 3px 10px 3px #cccccc;
+}
+.login-component .card .form .form-container input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login-component .card .form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-component .card .form button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.login-component .card .form .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.login-component .card .form .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.login-component .card .form img.avatar {
+  width: 20%;
+}
+.login-component .card .form .form-container {
+  padding: 16px;
+}
+
+.login-component .card .form span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.login-component .card .form .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login-component .card .form .close:hover,
+.login-component .card .form .close:focus {
+  color: red;
+  cursor: pointer;
+}
+.login-component .danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+  height: 40px;
+}
+.login-component .danger p{
+  line-height: 40px;
+  font-size: 20px;
+}
